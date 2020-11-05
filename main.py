@@ -50,136 +50,147 @@ input('Continuar [ENTER]')
 
 system('clear')
 
+while True:
+    print('''
+        ███╗   ███╗███████╗███╗   ██╗██╗   ██╗
+        ████╗ ████║██╔════╝████╗  ██║██║   ██║
+        ██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║
+        ██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║   ██║
+        ██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝
+        ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝ 
+    ╔════════════════════════════════════════════╗
+    ║               Bot Instagram                ║
+    ║        Centro Universitario Projeção       ║
+    ╚════════════════════════════════════════════╝
+                Menu de Fucionalidades:
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ╚ 1 Comentararios e Likes
+    ╚ 2 Likes
+    ╚ 3 Seguir "Hashtags"
+    ╚ 4 Deixar de Seguir [Sem Restrições]
+    ╚ 5 Deixar de Seguir [Os que não seguem de volta]
+    ╚ 6 Excluir solicitações não aceitas
+    ╚ 7 Sair
+    ''')
+    option = str(input('Escolha uma das opções: '))
 
-print('''
-    ███╗   ███╗███████╗███╗   ██╗██╗   ██╗
-    ████╗ ████║██╔════╝████╗  ██║██║   ██║
-    ██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║
-    ██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║   ██║
-    ██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝
-    ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝ 
-╔════════════════════════════════════════════╗
-║               Bot Instagram                ║
-║        Centro Universitario Projeção       ║
-╚════════════════════════════════════════════╝
-            Menu de Fucionalidades:
-       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-╚ 1 Comentararios e Likes
-╚ 2 Likes
-╚ 3 Seguir "Hashtags"
-╚ 4 Deixar de Seguir [Sem Restrições]
-╚ 5 Deixar de Seguir [Os que não seguem de volta]
-╚ 6 Excluir solicitações não aceitas
-╚ 7 Sair
-''')
-option = str(input('Escolha uma das opções: '))
-
-if option in '1':
-    system('clear')
-    while True:
+    if option in '1':
         system('clear')
-        print('Exemplo: projeção informatica java php')
-        tags = str(input('Digite suas hashtags: ')).split()
-        if len(tags) > 0:
-            break
-        system('clear')
-        print('Precisa de pelo menos 1 hashtag, separados por espaços')
-
-    print('~'*40)
-    print('~'*40)
-
-    while True:
-        system('clear')
-        print('Exemplo: muito bom, bacana, gostei disso ai')
-        lista_comentarios = str(
-            input('Digite de 4 ou mais comentarios: ')).split(',')
-        if len(lista_comentarios) >= 4:
-            break
-        system('clear')
-        print('Precisa de pelo menos 4 comentarios, separados por virgulas')
-    # ['Muito bom', 'Show de bola', 'Tops!', 'Bacana', 'Muito massa', '👌 Tops!', 'Tops!!', '🤘🤘','Bacana 👍','Interessante 👍', 'legal 👍', '✌️✌️']
-    session = InstaPy(username=user,
-                      password=password)
-    with smart_run(session):
-        def commentarios(tags, lista_comentarios):
-            # porcentagem de likes que realizara
-            session.set_do_comment(True, percentage=100)
-            # media='Video' --> define o tipo de post e marca o quem enviou o post
-            session.set_comments(lista_comentarios)
-            session.like_by_tags(tags, amount=10, media='Photo', skip_top_posts=True,
-                                 randomize=True, interact=True)
-            session.set_user_interact(amount=1,  # interagir com 1
-                                      randomize=True,  # aleatorio
-                                      percentage=100,  # porcentagem
-                                      media='Photo')  # tipo de midia que sera curtidacommentarios
-        commentarios(tags, lista_comentarios)
-elif option in '2':
-    system('clear')
-    while True:
-        system('clear')
-        print('Exemplo: projeção informatica java php')
-        tags = str(input('Digite suas hashtags: ')).split()
-        if len(tags) > 0:
-            break
-        system('clear')
-        print('Precisa de pelo menos 1 hashtag, separados por espaços')
-    print('~'*40)
-    print('~'*40)
-    session = InstaPy(username=user,
-                      password=password)
-    with smart_run(session):
-        def likes_option(tags):
-            session.like_by_tags(tags, amount=10, media='Photo', skip_top_posts=True,
-                                 randomize=True, interact=True)
-            session.set_user_interact(amount=1,  # interagir com 1
-                                      randomize=True,  # aleatorio
-                                      percentage=100,  # porcentagem
-                                      media='Photo')  # tipo de midia que sera curtidacommentarios
-        likes_option(tags)
-elif option in '3':
-    system('clear')
-    while True:
-        print('Exemplo: projeção informatica java php')
-        tags = str(input('Digite suas hashtags: ')).split()
-        if len(tags) > 0:
-            break
-        system('clear')
-        print('Precisa de pelo menos 1 hashtag, separados por espaços')
+        while True:
+            system('clear')
+            print('Exemplo: projeção informatica java php')
+            tags = str(input('Digite suas hashtags: ')).split()
+            if len(tags) > 0:
+                break
+            system('clear')
+            print('Precisa de pelo menos 1 hashtag, separados por espaços')
         print('~'*40)
         print('~'*40)
-    session = InstaPy(username=user,
-                    password=password)
-    with smart_run(session):
-        def seguir_por_tags(tags): 
-            session.follow_by_tags(tags, amount=10)
-        seguir_por_tags(tags)
-elif option in '4':	
-    system('clear')
-    print('Quantos quer deixar de seguir? Obs. campo em branco sera gerado um valor aleatorio.')
-    quant = int(input('Digite: '))
-    if quant <= 0:
-        quant = randint(5,10)
-    system('clear')
-    session = InstaPy(username=user, password=password)
-    with smart_run(session):
-        def deixar_de_seguir_all(quant): 
-            session.unfollow_users(amount=quant, allFollowing=True,
-            style="LIFO", unfollow_after=3*60*60, sleep_delay=450)
-        deixar_de_seguir_all(quant)
-elif option in '5':	
-    system('clear')
-    print('Quantos quer deixar de seguir? Obs. campo em branco sera gerado um valor aleatorio.')
-    quant = int(input('Digite: '))
-    if quant <= 0:
-        quant = randint(5,10)
-    system('clear')
-    session = InstaPy(username=user, password=password)
-    with smart_run(session):
-        def deixar_seguir_ingratos(quant): 
-            session.unfollow_users(amount=quant, nonFollowers=True, style="FIFO", unfollow_after=42*60*60, sleep_delay=655)
-    deixar_seguir_ingratos(quant)
-elif option in '6':
-    print("")
+
+        while True:
+            system('clear')
+            print('Exemplo: muito bom, bacana, gostei disso ai')
+            lista_comentarios = str(
+                input('Digite de 4 ou mais comentarios: ')).split(',')
+            if len(lista_comentarios) >= 4:
+                break
+            system('clear')
+            print('Precisa de pelo menos 4 comentarios, separados por virgulas')
+        # ['Muito bom', 'Show de bola', 'Tops!', 'Bacana', 'Muito massa', '👌 Tops!', 'Tops!!', '🤘🤘','Bacana 👍','Interessante 👍', 'legal 👍', '✌️✌️']
+        session = InstaPy(username=user,
+                        password=password)
+        with smart_run(session):
+            def commentarios(tags, lista_comentarios):
+                # porcentagem de likes que realizara
+                session.set_do_comment(True, percentage=100)
+                # media='Video' --> define o tipo de post e marca o quem enviou o post
+                session.set_comments(lista_comentarios)
+                session.like_by_tags(tags, amount=10, media='Photo', skip_top_posts=True,
+                                    randomize=True, interact=True)
+                session.set_user_interact(amount=1,  # interagir com 1
+                                        randomize=True,  # aleatorio
+                                        percentage=100,  # porcentagem
+                                        media='Photo')  # tipo de midia que sera curtidacommentarios
+            commentarios(tags, lista_comentarios)
+            system('clear')
+            continue
+    elif option in '2':
+        system('clear')
+        while True:
+            system('clear')
+            print('Exemplo: projeção informatica java php')
+            tags = str(input('Digite suas hashtags: ')).split()
+            if len(tags) > 0:
+                break
+            system('clear')
+            print('Precisa de pelo menos 1 hashtag, separados por espaços')
+        print('~'*40)
+        print('~'*40)
+        session = InstaPy(username=user,
+                        password=password)
+        with smart_run(session):
+            def likes_option(tags):
+                session.like_by_tags(tags, amount=10, media='Photo', skip_top_posts=True,
+                                    randomize=True, interact=True)
+                session.set_user_interact(amount=1,  # interagir com 1
+                                        randomize=True,  # aleatorio
+                                        percentage=100,  # porcentagem
+                                        media='Photo')  # tipo de midia que sera curtidacommentarios
+            likes_option(tags)
+    elif option in '3':
+        system('clear')
+        while True:
+            print('Exemplo: projeção informatica java php')
+            tags = str(input('Digite suas hashtags: ')).split()
+            if len(tags) > 0:
+                break
+            system('clear')
+            print('Precisa de pelo menos 1 hashtag, separados por espaços')
+            print('~'*40)
+            print('~'*40)
+        session = InstaPy(username=user,
+                        password=password)
+        with smart_run(session):
+            def seguir_por_tags(tags): 
+                session.follow_by_tags(tags, amount=10)
+            seguir_por_tags(tags)
+    elif option in '4':	
+        system('clear')
+        print('Quantos quer deixar de seguir? Obs. campo em branco sera gerado um valor aleatorio.')
+        quant = int(input('Digite: '))
+        if quant <= 0:
+            quant = randint(5,10)
+        system('clear')
+        session = InstaPy(username=user, password=password)
+        with smart_run(session):
+            def deixar_de_seguir_all(quant): 
+                session.unfollow_users(amount=quant, allFollowing=True,
+                style="LIFO", unfollow_after=3*60*60, sleep_delay=450)
+            deixar_de_seguir_all(quant)
+    elif option in '5':	
+        system('clear')
+        print('Quantos quer deixar de seguir? Obs. campo em branco sera gerado um valor aleatorio.')
+        quant = int(input('Digite: '))
+        if quant <= 0:
+            quant = randint(5,10)
+        system('clear')
+        session = InstaPy(username=user, password=password)
+        with smart_run(session):
+            def deixar_seguir_ingratos(quant): 
+                session.unfollow_users(amount=quant, nonFollowers=True, style="FIFO", unfollow_after=42*60*60, sleep_delay=655)
+        deixar_seguir_ingratos(quant)
+    elif option in '6':
+        print("")
+    elif option in '7':
+        break
+    else:
+        system('clear')
+        print('Escolha um numero de 1 a 7!!\nEm alguns segundos você sera redirecionado ao MENU.')
+        for i in range(1,6):
+            sleep(0.6)
+            print('╚ ', i)
+        print() 
+        system('clear')
 
 #         session.unfollow_users(amount=3, allFollowing=True, style="LIFO", unfollow_after=3*60*60, sleep_delay=450)
 #         session.follow_by_tags(['fapro', 'uniprojecao'], amount=3)
