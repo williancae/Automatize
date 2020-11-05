@@ -20,9 +20,12 @@ print('''
     ▄█▀ ▄▄▄▄▄▄▄ ▀█▄
     ▀████████████▀   Automatizando tarefas INSTAGRAM...
         █▄███▄█       LIKE, Comments, Follows, Unfollows
-         █████                          
-         █▀█▀█        Prescione [ENTER] para continuarmos
+         █████         prescione [S] para saber mais
+         █▀█▀█        
+                     Prescione [ENTER] para continuarmos
 ''')
+
+
 input()
 system('clear')
 
