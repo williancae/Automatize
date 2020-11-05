@@ -156,7 +156,7 @@ elif option in '3':
 elif option in '4':	
     system('clear')
     print('Quantos quer deixar de seguir? Obs. campo em branco sera gerado um valor aleatorio.')
-    quant = int(input('Digite: ')).sprit()
+    quant = int(input('Digite: '))
     if quant <= 0:
         quant = randint(5,10)
     system('clear')
@@ -169,7 +169,7 @@ elif option in '4':
 elif option in '5':	
     system('clear')
     print('Quantos quer deixar de seguir? Obs. campo em branco sera gerado um valor aleatorio.')
-    quant = int(input('Digite: ')).sprit()
+    quant = int(input('Digite: '))
     if quant <= 0:
         quant = randint(5,10)
     system('clear')
