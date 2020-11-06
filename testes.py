@@ -22,6 +22,12 @@ print('''\033[1;33m
 \033[0;97m                     Prescione \033[1;91m[ENTER]\033[0;97m para continuarmos
 \033[0m''')
 
+
+
+
+
+
+
 print('''\033[1;33m
     ██╗      ██████╗  ██████╗ ██╗███╗   ██╗
     ██║     ██╔═══██╗██╔════╝ ██║████╗  ██║
@@ -38,6 +44,30 @@ print('''\033[1;33m
  Credenciais o Bot - AUTOMOTIZE trabalha sem 
  uso de Banco de Dados.\033[0m
 ''')
+
+print('''
+    ███╗   ███╗███████╗███╗   ██╗██╗   ██╗
+    ████╗ ████║██╔════╝████╗  ██║██║   ██║
+    ██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║
+    ██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║   ██║
+    ██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝
+    ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝ 
+╔════════════════════════════════════════════╗
+║               Bot Instagram                ║
+║        Centro Universitario Projeção       ║
+╚════════════════════════════════════════════╝
+            Menu de Fucionalidades:
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+╚ 1 Comentararios e Likes
+╚ 2 Likes
+╚ 3 Seguir "Hashtags"
+╚ 4 Deixar de Seguir [Sem Restrições]
+╚ 5 Deixar de Seguir [Os que não seguem de volta]
+╚ 6 Excluir solicitações não aceitas
+╚ 7 Sair
+''')
+
+
 
 
 

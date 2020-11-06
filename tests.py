@@ -72,7 +72,7 @@ print('''
 ╚ 6 Excluir solicitações não aceitas
 ╚ 7 Sair
 ''')
-option = str(input('Escolha uma das opções: '))
+option = str(input('Escolha uma das opções: ')).strip()
 
 if option in '1':
     while True:
