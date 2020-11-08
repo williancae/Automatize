@@ -10,26 +10,26 @@ from time import sleep
 # insta_username = 'willian.cae'
 # insta_password = 'Will84530303'
 system('clear')
-print('''
+print('''\033[1;33m
  █████╗ ██╗   ██╗████████╗ ██████╗ ███╗   ███╗ ██████╗ ████████╗██╗███████╗███████╗
 ██╔══██╗██║   ██║╚══██╔══╝██╔═══██╗████╗ ████║██╔═══██╗╚══██╔══╝██║╚══███╔╝██╔════╝
 ███████║██║   ██║   ██║   ██║   ██║██╔████╔██║██║   ██║   ██║   ██║  ███╔╝ █████╗  
 ██╔══██║██║   ██║   ██║   ██║   ██║██║╚██╔╝██║██║   ██║   ██║   ██║ ███╔╝  ██╔══╝  
 ██║  ██║╚██████╔╝   ██║   ╚██████╔╝██║ ╚═╝ ██║╚██████╔╝   ██║   ██║███████╗███████╗
 ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝ ╚═╝     ╚═╝ ╚═════╝    ╚═╝   ╚═╝╚══════╝╚══════╝
-    ▄█▀ ▄▄▄▄▄▄▄ ▀█▄
-    ▀████████████▀   Automatizando tarefas INSTAGRAM...
-        █▄███▄█       LIKE, Comments, Follows, Unfollows
-         █████         prescione [S] para saber mais
-         █▀█▀█        
-                     Prescione [ENTER] para continuarmos
-''')
+\033[1;31m    ▄█▀ ▄▄▄▄▄▄▄ ▀█▄
+\033[1;31m    ▀████████████▀\033[0;97m   Automatizando tarefas \033[1;93mINSTAGRAM\033[1;33m...
+\033[1;31m        █▄███▄█\033[0;97m      \033[1;93mLIKE, Comments, Follows, Unfollows
+\033[1;31m         █████\033[0;97m         prescione \033[1;91m[S]\033[0;97m para saber mais
+\033[1;31m         █▀█▀█        
+\033[0;97m                     Prescione \033[1;91m[ENTER]\033[0;97m para continuarmos
+\033[0m''')
 
 
 input()
 system('clear')
 
-print('''
+print('''\033[1;33m
     ██╗      ██████╗  ██████╗ ██╗███╗   ██╗
     ██║     ██╔═══██╗██╔════╝ ██║████╗  ██║
     ██║     ██║   ██║██║  ███╗██║██╔██╗ ██║
@@ -37,14 +37,13 @@ print('''
     ███████╗╚██████╔╝╚██████╔╝██║██║ ╚████║
     ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝╚═╝  ╚═══╝ 
 ╔════════════════════════════════════════════╗
-║    Usuario e Senha de Acesso - INSTAGRAM   ║
-║       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ║
-║          SEUS DADOS ESTÃO SEGUROS          ║
+║\033[1;97m    Usuario e Senha de Acesso - INSTAGRAM   \033[1;33m║
+║\033[1;96m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       \033[1;33m║
+║\033[1;97m          SEUS DADOS ESTÃO SEGUROS          \033[1;33m║
 ╚════════════════════════════════════════════╝ 
-Atenção: Não guardaremos nenhuma de suas 
-Credenciais o Bot - AUTOMOTIZE trabalha sem 
-uso de Banco de Dados.
-''')
+\033[1;92m Observações:\033[0;97m Não guardaremos nenhuma de suas 
+ Credenciais o Bot - AUTOMOTIZE trabalha sem 
+ uso de Banco de Dados.\033[0m''')
 
 user = str(input('Usuario: ')).strip()
 password = str(input('Senha: ')).strip()
@@ -54,27 +53,26 @@ input('Continuar [ENTER]')
 system('clear')
 
 while True:
-    print('''
-        ███╗   ███╗███████╗███╗   ██╗██╗   ██╗
-        ████╗ ████║██╔════╝████╗  ██║██║   ██║
-        ██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║
-        ██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║   ██║
-        ██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝
-        ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝ 
-    ╔════════════════════════════════════════════╗
-    ║               Bot Instagram                ║
-    ║        Centro Universitario Projeção       ║
-    ╚════════════════════════════════════════════╝
-                Menu de Fucionalidades:
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    ╚ 1 Comentararios e Likes
-    ╚ 2 Likes
-    ╚ 3 Seguir "Hashtags"
-    ╚ 4 Deixar de Seguir [Sem Restrições]
-    ╚ 5 Deixar de Seguir [Os que não seguem de volta]
-    ╚ 6 Excluir solicitações não aceitas
-    ╚ 7 Sair
-    ''')
+    print('''\033[1;33m
+    ███╗   ███╗███████╗███╗   ██╗██╗   ██╗
+    ████╗ ████║██╔════╝████╗  ██║██║   ██║
+    ██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║
+    ██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║   ██║
+    ██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝
+    ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝ 
+╔════════════════════════════════════════════╗
+║\033[1;31m               Bot Instagram\033[1;33m                ║
+║\033[1;36m        Centro Universitario Projeção\033[1;33m       ║
+╚════════════════════════════════════════════╝
+            \033[1;32mMenu de Fucionalidades:\033[1;33m
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+╚ 1 \033[1;97mComentararios e Likes\033[1;33m
+╚ 2 \033[1;97mLikes\033[1;33m
+╚ 3 \033[1;97mSeguir "Hashtags"\033[1;33m
+╚ 4 \033[1;97mDeixar de Seguir [Sem Restrições]\033[1;33m
+╚ 5 \033[1;97mDeixar de Seguir [Os que não seguem de volta]\033[1;33m
+╚ 6 \033[1;31mSair\033[0m
+''')
     option = str(input('Escolha uma das opções: '))
 
     if option in '1':
@@ -183,12 +181,18 @@ while True:
                 session.unfollow_users(amount=quant, nonFollowers=True, style="FIFO", unfollow_after=42*60*60, sleep_delay=655)
         deixar_seguir_ingratos(quant)
     elif option in '6':
-        print("")
-    elif option in '7':
-        break
+        break        
+    elif option in '':
+        system('clear')
+        print('Escolha um numero de 1 a 6!!\nEm alguns segundos você sera redirecionado ao MENU.')
+        for i in range(1,6):
+            sleep(0.6)
+            print('╚ ', i)
+        print() 
+        system('clear')
     else:
         system('clear')
-        print('Escolha um numero de 1 a 7!!\nEm alguns segundos você sera redirecionado ao MENU.')
+        print('Escolha um numero de 1 a 6!!\nEm alguns segundos você sera redirecionado ao MENU.')
         for i in range(1,6):
             sleep(0.6)
             print('╚ ', i)
