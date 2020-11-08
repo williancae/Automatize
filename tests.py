@@ -10,23 +10,24 @@ from time import sleep
 # insta_username = 'willian.cae'
 # insta_password = 'Will84530303'
 system('clear')
-print('''
+print('''\033[1;33m
  █████╗ ██╗   ██╗████████╗ ██████╗ ███╗   ███╗ ██████╗ ████████╗██╗███████╗███████╗
 ██╔══██╗██║   ██║╚══██╔══╝██╔═══██╗████╗ ████║██╔═══██╗╚══██╔══╝██║╚══███╔╝██╔════╝
 ███████║██║   ██║   ██║   ██║   ██║██╔████╔██║██║   ██║   ██║   ██║  ███╔╝ █████╗  
 ██╔══██║██║   ██║   ██║   ██║   ██║██║╚██╔╝██║██║   ██║   ██║   ██║ ███╔╝  ██╔══╝  
 ██║  ██║╚██████╔╝   ██║   ╚██████╔╝██║ ╚═╝ ██║╚██████╔╝   ██║   ██║███████╗███████╗
 ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝ ╚═╝     ╚═╝ ╚═════╝    ╚═╝   ╚═╝╚══════╝╚══════╝
-    ▄█▀ ▄▄▄▄▄▄▄ ▀█▄
-    ▀████████████▀   Automatizando tarefas INSTAGRAM...
-        █▄███▄█       LIKE, Comments, Follows, Unfollows
-         █████                          
-         █▀█▀█        Prescione [ENTER] para continuarmos
-''')
+\033[1;31m    ▄█▀ ▄▄▄▄▄▄▄ ▀█▄
+\033[1;31m    ▀████████████▀\033[0;97m   Automatizando tarefas \033[1;93mINSTAGRAM\033[1;33m...
+\033[1;31m        █▄███▄█\033[0;97m      \033[1;93mLIKE, Comments, Follows, Unfollows
+\033[1;31m         █████\033[0;97m         prescione \033[1;91m[S]\033[0;97m para saber mais
+\033[1;31m         █▀█▀█        
+\033[0;97m                     Prescione \033[1;91m[ENTER]\033[0;97m para continuarmos
+\033[0m''')
 input()
 system('clear')
 
-print('''
+print('''\033[1;33m
     ██╗      ██████╗  ██████╗ ██╗███╗   ██╗
     ██║     ██╔═══██╗██╔════╝ ██║████╗  ██║
     ██║     ██║   ██║██║  ███╗██║██╔██╗ ██║
@@ -34,13 +35,13 @@ print('''
     ███████╗╚██████╔╝╚██████╔╝██║██║ ╚████║
     ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝╚═╝  ╚═══╝ 
 ╔════════════════════════════════════════════╗
-║    Usuario e Senha de Acesso - INSTAGRAM   ║
-║       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ║
-║          SEUS DADOS ESTÃO SEGUROS          ║
+║\033[1;97m    Usuario e Senha de Acesso - INSTAGRAM   \033[1;33m║
+║\033[1;96m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       \033[1;33m║
+║\033[1;97m          SEUS DADOS ESTÃO SEGUROS          \033[1;33m║
 ╚════════════════════════════════════════════╝ 
-Atenção: Não guardaremos nenhuma de suas 
-Credenciais o Bot - AUTOMOTIZE trabalha sem 
-uso de Banco de Dados.
+\033[1;92m Observações:\033[0;97m Não guardaremos nenhuma de suas 
+ Credenciais o Bot - AUTOMOTIZE trabalha sem 
+ uso de Banco de Dados.\033[0m
 ''')
 
 user = str(input('Usuario: ')).strip()
@@ -51,7 +52,7 @@ input('Continuar [ENTER]')
 system('clear')
 
 
-print('''
+print('''\033[1;33m
     ███╗   ███╗███████╗███╗   ██╗██╗   ██╗
     ████╗ ████║██╔════╝████╗  ██║██║   ██║
     ██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║
@@ -59,19 +60,19 @@ print('''
     ██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝
     ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝ 
 ╔════════════════════════════════════════════╗
-║               Bot Instagram                ║
-║        Centro Universitario Projeção       ║
+║\033[1;31m               Bot Instagram\033[1;33m                ║
+║\033[1;36m        Centro Universitario Projeção\033[1;33m       ║
 ╚════════════════════════════════════════════╝
-            Menu de Fucionalidades:
+            \033[1;32mMenu de Fucionalidades:\033[1;33m
        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-╚ 1 Comentararios e Likes
-╚ 2 Likes
-╚ 3 Seguir "Hashtags"
-╚ 4 Deixar de Seguir [Sem Restrições]
-╚ 5 Deixar de Seguir [Os que não seguem de volta]
-╚ 6 Excluir solicitações não aceitas
-╚ 7 Sair
+╚ 1 \033[1;97mComentararios e Likes\033[1;33m
+╚ 2 \033[1;97mLikes\033[1;33m
+╚ 3 \033[1;97mSeguir "Hashtags"\033[1;33m
+╚ 4 \033[1;97mDeixar de Seguir [Sem Restrições]\033[1;33m
+╚ 5 \033[1;97mDeixar de Seguir [Os que não seguem de volta]\033[1;33m
+╚ 6 \033[1;31mSair\033[0m
 ''')
+
 option = str(input('Escolha uma das opções: ')).strip()
 
 if option in '1':
@@ -105,10 +106,10 @@ if option in '1':
             session.set_comments(lista_comentarios)
             session.like_by_tags(tags, amount=10, media='Photo', skip_top_posts=True,
                                  randomize=True, interact=True)
-            session.set_user_interact(amount=1,  # interagir com 1
-                                      randomize=True,  # aleatorio
-                                      percentage=100,  # porcentagem
-                                      media='Photo')  # tipo de midia que sera curtidacommentarios
+            # session.set_user_interact(amount=1,  # interagir com 1
+            #                           randomize=True,  # aleatorio
+            #                           percentage=100,  # porcentagem
+            #                           media='Photo')  # tipo de midia que sera curtidacommentarios
         commentarios(tags, lista_comentarios)
 if option in '2':
     while True:

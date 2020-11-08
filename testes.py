@@ -22,11 +22,7 @@ print('''\033[1;33m
 \033[0;97m                     Prescione \033[1;91m[ENTER]\033[0;97m para continuarmos
 \033[0m''')
 
-
-
-
-
-
+    # session.set_action_delays(enabled=True, like=5.2, randomize=True, random_range_from=70, random_range_to=140)
 
 print('''\033[1;33m
     ██╗      ██████╗  ██████╗ ██╗███╗   ██╗
@@ -40,12 +36,15 @@ print('''\033[1;33m
 ║\033[1;96m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       \033[1;33m║
 ║\033[1;97m          SEUS DADOS ESTÃO SEGUROS          \033[1;33m║
 ╚════════════════════════════════════════════╝ 
-\033[0;97m Atenção: Não guardaremos nenhuma de suas 
+\033[1;92m Observações:\033[0;97m Não guardaremos nenhuma de suas 
  Credenciais o Bot - AUTOMOTIZE trabalha sem 
  uso de Banco de Dados.\033[0m
 ''')
 
-print('''
+
+
+
+print('''\033[1;33m
     ███╗   ███╗███████╗███╗   ██╗██╗   ██╗
     ████╗ ████║██╔════╝████╗  ██║██║   ██║
     ██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║
@@ -53,19 +52,20 @@ print('''
     ██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝
     ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝ 
 ╔════════════════════════════════════════════╗
-║               Bot Instagram                ║
-║        Centro Universitario Projeção       ║
+║\033[1;31m               Bot Instagram\033[1;33m                ║
+║\033[1;36m        Centro Universitario Projeção\033[1;33m       ║
 ╚════════════════════════════════════════════╝
-            Menu de Fucionalidades:
+            \033[1;32mMenu de Fucionalidades:\033[1;33m
        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-╚ 1 Comentararios e Likes
-╚ 2 Likes
-╚ 3 Seguir "Hashtags"
-╚ 4 Deixar de Seguir [Sem Restrições]
-╚ 5 Deixar de Seguir [Os que não seguem de volta]
-╚ 6 Excluir solicitações não aceitas
-╚ 7 Sair
+╚ 1 \033[1;97mComentararios e Likes\033[1;33m
+╚ 2 \033[1;97mLikes\033[1;33m
+╚ 3 \033[1;97mSeguir "Hashtags"\033[1;33m
+╚ 4 \033[1;97mDeixar de Seguir [Sem Restrições]\033[1;33m
+╚ 5 \033[1;97mDeixar de Seguir [Os que não seguem de volta]\033[1;33m
+╚ 6 \033[1;31mSair\033[0m
 ''')
+
+
 
 
 
@@ -91,4 +91,4 @@ print(f'''
 \033[0;93m║ \033[0;97mcom uma interface mais amigavel.                   \033[0;93m║   
 \033[0;93m║                                                    ║            
 \033[0;93m╚════════════════════════════════════════════════════╝
-\033[0m''')
+\033[1;92m              [Enter] para continurar \033[0m''')
